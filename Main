@@ -1,12 +1,7 @@
-
-
 public class Main{
 
-public static int totTime;
-public static int totTime2;
-public static int totTime3;
 
-                             
+
 
     public static void main(String[] args) {
 
@@ -14,42 +9,42 @@ public static int totTime3;
         int totTime2 = 27364375;
         int totTime3 = 67294091;
         // write your code here
-        System.out.printf("At a world time " + totTime + ", it is " +  year1() + " year, at day " + (int) rday1() + " " + (int) hour1() + ":" + (int)minute1() + ".\nTrammel is at phase " + (int) cycle1() + " of its 9 day phase cycle. Felucca is at phase " + (int) cycle2() + " of its 14 day phase cycle\n");
+        System.out.printf("At a world time " + totTime + ", it is " +  (int)year1() + " year, at day " + (int) rday1() + " " + (int) hour1() + ":" + (int)minute1() + ".\nTrammel is at phase " + (int) cycle1() + " of its 9 day phase cycle. Felucca is at phase " + (int) cycle2() + " of its 14 day phase cycle\n");
         System.out.printf("At a world time " + totTime2 + ", it is " + (int) ryear2() + " year, at day " + (int) rday2() + " " + (int) hour2() + ":" + (int)minute2() + ".\nTrammel is at phase " + (int) cycle3() + " of its 9 day phase cycle. Felucca is at phase " + (int) cycle3() + " of its 14 day phase cycle\n");
         System.out.printf("At a world time " + totTime3 + ", it is " + (int) ryear3() + " year, at day " + (int) rday3() + " " + (int) hour3() + ":" + (int) minute3() + ".\nTrammel is at phase " + (int) cycle5() + " of its 9 day phase cycle. Felucca is at phase " + (int) cycle6() + " of its 14 day phase cycle\n");
     }
-        public static double year1()
-        {    double year1=totTime/(365*1440);
-             return year1;
+    public static double year1()
+    {    double year1=168260271.0/(365*1440);
+        return year1;
 
-        }
-        public static double year2()
-        {double year2=totTime2/(365*1440);
+    }
+    public static double year2()
+    {double year2=27364375.0/(365*1440);
         return year2;
-        }
+    }
 
-        public static double year3()
-        {double year3=totTime3/(365*1440);
+    public static double year3()
+    {double year3=67294091.0/(365*1440);
         return year3;
-        }
+    }
 
-        public static double day1()
-                                           {
-            double rday1=(365*(year1()- (int)year1()));
-            return rday1;
-        }
+    public static double day1()
+    {
+        double day1=(365*(year1()- (int)year1()));
+        return day1;
+    }
 
-        public static double day2()
-        {
-            double rday2=(365*(year2()- (int)year2()));
-            return rday2;
-        }
+    public static double day2()
+    {
+        double day2=(365*(year2()- (int)year2()));
+        return day2;
+    }
 
-         public static double day3()
-         {
-             double rday3=(365*(year3()- (int)year3()));
-             return rday3;
-         }
+    public static double day3()
+    {
+        double day3=(365*(year3()- (int)year3()));
+        return day3;
+    }
 
     public static double hour1()
 
@@ -58,116 +53,115 @@ public static int totTime3;
         return hour1;
     }
 
-     public static double hour2()
+    public static double hour2()
 
-     {
-         double hour2 = (24 * (day2() - (int) day2()));
-         return hour2;
-     }
+    {
+        double hour2 = (24 * (day2() - (int) day2()));
+        return hour2;
+    }
 
-       public static double hour3()
+    public static double hour3()
 
-       {
-           double hour3 = (24 * (day3() - (int) day3()));
-           return hour3;
-       }
-      public static double minute1 ()
-        {
-            double minute1 = (60 * (hour1() - (int) hour1()));
-            return minute1;
-        }
-        public static double minute2 ()
-          {
-              double minute2 = (60 * (hour2() - (int) hour2()));
-              return minute2;
-          }
+    {
+        double hour3 = (24 * (day3() - (int) day3()));
+        return hour3;
+    }
+    public static double minute1 ()
+    {
+        double minute1 = (60 * (hour1() - (int) hour1()));
+        return minute1;
+    }
+    public static double minute2 ()
+    {
+        double minute2 = (60 * (hour2() - (int) hour2()));
+        return minute2;
+    }
 
-          public static double minute3 ()
-            {
-                double minute3 = (60 * (hour3() - (int) hour3()));
-                return minute3;
-            }
+    public static double minute3 ()
+    {
+        double minute3 = (60 * (hour3() - (int) hour3()));
+        return minute3;
+    }
 
-        public static double cycle1 ()
-        {
-            double moon1 = totTime / (9 * 1440);
-            double rcycle1 = 9 * (moon1 - (int) moon1);
-            double cycle1 = rcycle1 + 1;
-            return cycle1;
-        }
-        public static double cycle2()
-        {
-            double moon2 = totTime / (14 * 1440);
-            double rcycle2 = 14 * (moon2 - (int) moon2);
-            double cycle2 = rcycle2 + 1;
-            return cycle2;
+    public static double cycle1 ()
+    {
+        double moon1 = 168260271.0 / (9 * 1440);
+        double rcycle1 = 9 * (moon1 - (int) moon1);
+        double cycle1 = rcycle1 + 1;
+        return cycle1;
+    }
+    public static double cycle2()
+    {
+        double moon2 = 168260271.0 / (14 * 1440);
+        double rcycle2 = 14 * (moon2 - (int) moon2);
+        double cycle2 = rcycle2 + 1;
+        return cycle2;
 
-        }
+    }
 
 
 
-            public static double cycle3()
-            {
-                double moon1 = totTime / (9 * 1440);
-                double rcycle3 = 9 * (moon1 - (int) moon1);
-                double cycle3 = rcycle3 + 1;
-                return cycle3;
-            }
-            public static double cycle4()
-            {
-                double moon2 = totTime / (14 * 1440);
-                double rcycle4 = 14 * (moon2 - (int) moon2);
-                double cycle4 = rcycle4 + 1;
-                return cycle4;
+    public static double cycle3()
+    {
+        double moon1 = 27364375.0 / (9 * 1440);
+        double rcycle3 = 9 * (moon1 - (int) moon1);
+        double cycle3 = rcycle3 + 1;
+        return cycle3;
+    }
+    public static double cycle4()
+    {
+        double moon2 = 27364375.0 / (14 * 1440);
+        double rcycle4 = 14 * (moon2 - (int) moon2);
+        double cycle4 = rcycle4 + 1;
+        return cycle4;
 
-            }
+    }
 
-              public static double cycle5 ()
-              {
-                  double moon1 = totTime / (9 * 1440);
-                  double rcycle5= 9 * (moon1 - (int) moon1);
-                  double cycle5 = rcycle5 + 1;
-                  return cycle5;
-              }
-              public static double cycle6()
-              {
-                  double moon2 = totTime / (14 * 1440);
-                  double rcycle6 = 14 * (moon2 - (int) moon2);
-                  double cycle6 = rcycle6 + 1;
-                  return cycle6;
+    public static double cycle5 ()
+    {
+        double moon1 = 67294091.0 / (9 * 1440);
+        double rcycle5= 9 * (moon1 - (int) moon1);
+        double cycle5 = rcycle5 + 1;
+        return cycle5;
+    }
+    public static double cycle6()
+    {
+        double moon2 = 67294091.0 / (14 * 1440);
+        double rcycle6 = 14 * (moon2 - (int) moon2);
+        double cycle6 = rcycle6 + 1;
+        return cycle6;
 
-              }
+    }
 
-        public static double ryear1()
-        {double ryear1=year1()+1;
+    public static double ryear1()
+    {double ryear1=year1()+1;
         return ryear1;
-        }
-        public static double ryear2() {
-            double ryear2 = year2() + 1;
-            return ryear2;
-        }
-            public static double ryear3 ()
-            {
-                double ryear3 = year3() + 1;
-                return ryear3;
-            }
-            public static double rday1 ()
-            {
-                double rday1 = day1() + 1;
-                return rday1;
-            }
+    }
+    public static double ryear2() {
+        double ryear2 = year2() + 1;
+        return ryear2;
+    }
+    public static double ryear3 ()
+    {
+        double ryear3 = year3() + 1;
+        return ryear3;
+    }
+    public static double rday1 ()
+    {
+        double rday1 = day1() + 1;
+        return rday1;
+    }
 
 
-            public static double rday2 ()
-            {
-                double rday2 = day2() + 1;
-                return rday2;
-            }
+    public static double rday2 ()
+    {
+        double rday2 = day2() + 1;
+        return rday2;
+    }
 
-            public static double rday3 ()
-            {
-                double rday3 = day3() + 1;
-                return rday3;
-            }}
-
+    public static double rday3 ()
+    {
+        double rday3 = day3() + 1;
+        return rday3;
+    }}
 
