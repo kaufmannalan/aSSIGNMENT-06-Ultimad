@@ -1,9 +1,9 @@
-"C:\Program Files\Java\jdk-10.0.2\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.2\bin\IntelliJ IDEA Community Edition 2018.2.2\lib\idea_rt.jar=52944:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.2\bin\IntelliJ IDEA Community Edition 2018.2.2\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Alan\IdeaProjects\Ultima\out\production\Ultima Main
-At a world time 168260271, it is 0.0 year, at day 1 0:0.
-Trammel is at phase 1 of its 9 day phase cycle. Felucca is at phase 1 of its 14 day phase cycle
-At a world time 27364375, it is 1 year, at day 1 0:0.
-Trammel is at phase 1 of its 9 day phase cycle. Felucca is at phase 1 of its 14 day phase cycle
-At a world time 67294091, it is 1 year, at day 1 0:0.
-Trammel is at phase 1 of its 9 day phase cycle. Felucca is at phase 1 of its 14 day phase cycle
+"C:\Program Files\Java\jdk-10.0.2\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.2\bin\IntelliJ IDEA Community Edition 2018.2.2\lib\idea_rt.jar=53752:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.2\bin\IntelliJ IDEA Community Edition 2018.2.2\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Alan\IdeaProjects\Yatzee\out\production\Yatzee Main
+At a world time 168260271, it is 320 year, at day 48 9:51.
+Trammel is at phase 1 of its 9 day phase cycle. Felucca is at phase 4 of its 14 day phase cycle
+At a world time 27364375, it is 53 year, at day 24 0:54.
+Trammel is at phase 5 of its 9 day phase cycle. Felucca is at phase 5 of its 14 day phase cycle
+At a world time 67294091, it is 129 year, at day 13 0:10.
+Trammel is at phase 5 of its 9 day phase cycle. Felucca is at phase 1 of its 14 day phase cycle
 
 Process finished with exit code 0
